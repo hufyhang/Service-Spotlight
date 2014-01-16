@@ -28,7 +28,7 @@ require(['resultView'], function (resultView) {
 
     // register events
     $('#search-btn').on('click', function () {
-        if ($('#home-input').val().length === 0) {
+        if ($('#home-input').val().length === 0 || $('#home-input').val().trim().length === 0) {
             console.log('No inputs!!!');
         } else {
             router.navigate('search');
