@@ -17,7 +17,6 @@ if (mysqli_connect_errno($con))
     foreach ($keys as $key) {
         $query = $query . "AND description LIKE '%" . $key . "%' ";
     }
-    $query = $query . "ESCAPE '\'";
 
 
     $result = mysqli_query($con, $query);
