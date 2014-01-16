@@ -20,7 +20,7 @@ require(['resultView'], function (resultView) {
             $('#home-input').val('');
         },
         'search': function () {
-            // view.render();
+            view.render();
             $('#home-container').css('display', 'none');
             $('#result-container').css('display', 'initial');
         }
