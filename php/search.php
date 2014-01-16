@@ -9,7 +9,7 @@ $res = '{"status":"';
 // Check connection
 if (mysqli_connect_errno($con))
 {
-    $res = "Failed to connect to MySQL: " . mysqli_connect_error() . '"';
+    $res = $res. '400", "data": "Failed to connect to MySQL: ' . mysqli_connect_error() . '"';
 } else {
     $keys = explode(" ", $keywords);
     $query = "SELECT * FROM restful_apis WHERE description LIKE '%%' ";
@@ -17,6 +17,7 @@ if (mysqli_connect_errno($con))
     foreach ($keys as $key) {
         $query = $query . "AND description LIKE '%" . $key . "%' ";
     }
+    $query = $query . "ESCAPE '\'";
 
 
     $result = mysqli_query($con, $query);
