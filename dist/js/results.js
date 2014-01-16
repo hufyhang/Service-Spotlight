@@ -1,0 +1,1 @@
+define(["result"],function(e){var t=e.Result,n=Ribs.Collection.make({defaults:{keywords:""},model:t,initialize:function(){console.log("Ribs.Collection ready")},fetch:{url:"http://feifeihang.info/spotlight/php/search.php",method:"post"}});return{Results:n}});

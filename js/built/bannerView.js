@@ -1,0 +1,1 @@
+define([],function(){var e=Ribs.View.make({el:$("#result-container"),defaults:{keywords:null},render:function(){var e="<div id='result-banner'><a href='#home'><div class='btn btn-primary id='back-btn'><i class='fa fa-home back-icon'></i>Back</div></a></div>";this.el.html(e)}});return{Banner:e}});
