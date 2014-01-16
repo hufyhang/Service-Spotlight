@@ -13,6 +13,8 @@ define(['result', 'bannerView'], function (Result, BannerView) {
         },
         render: function () {
             var keys = $('#home-input').val();
+            $(document).attr('title', keys + ' - Service Spotlight');
+
             keys = keys.replace(/\'/g, "\\\'");
             keys = keys.replace(/%/g, "\\%");
             // reset Result Model

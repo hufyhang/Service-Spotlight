@@ -18,6 +18,7 @@ require(['resultView'], function (resultView) {
             $('#home-container').css('display', 'initial');
             $('#result-container').css('display', 'none');
             $('#home-input').val('');
+            $(document).attr('title', 'Service Spotlight');
         },
         'search': function () {
             view.render();
