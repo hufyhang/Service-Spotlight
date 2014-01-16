@@ -1,5 +1,16 @@
 require(['resultView'], function (resultView) {
     "use strict";
+
+    consoel.log('$$\\\\   $$\\ $$$$$$$$\\ $$\\      $$\\ $$\\      $$$$$$$\\  ');
+    consoel.log('$$ |  $$ |\\__$$  __|$$$\\    $$$ |$$ |     $$  ____| ');
+    consoel.log('$$ |  $$ |   $$ |   $$$$\\  $$$$ |$$ |     $$ |      ');
+    consoel.log('$$$$$$$$ |   $$ |   $$\\$$\\$$ $$ |$$ |     $$$$$$$\\  ');
+    consoel.log('$$  __$$ |   $$ |   $$ \\$$$  $$ |$$ |     \\_____$$\\ ');
+    consoel.log('$$ |  $$ |   $$ |   $$ |\\$  /$$ |$$ |     $$\\   $$ |');
+    consoel.log('$$ |  $$ |   $$ |   $$ | \\_/ $$ |$$$$$$$$\\\\$$$$$$  |');
+    consoel.log('\\__|  \\__|   \\__|   \\__|     \\__|\\________|\\______/');
+
+
     var view = Ribs.make(resultView.View);
 
     var router = Ribs.Router.route({
@@ -9,7 +20,7 @@ require(['resultView'], function (resultView) {
             $('#home-input').val('');
         },
         'search': function () {
-            view.render();
+            // view.render();
             $('#home-container').css('display', 'none');
             $('#result-container').css('display', 'initial');
         }

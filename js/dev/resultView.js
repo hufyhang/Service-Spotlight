@@ -31,6 +31,7 @@ define(['result', 'bannerView'], function (Result, BannerView) {
                     result.set({status: data.status, data: data.data});
                     if (parseInt(result.get('status'), 10) === 200) {
                         var dataset = result.get('data');
+                        console.log('Total: ' + dataset.length);
                         view.el.append(_.template(view.template, {data: dataset}));
                     }
                 }
