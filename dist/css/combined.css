@@ -327,7 +327,7 @@ body {
   font-size: 4em;
   font-family: "Francois One", sans-serif;
   font-weight: normal;
-  text-shadow: 1px 1px 3px white, 2px 2px 3px red, 3px 3px 3px yellow, 4px 4px 3px blue, 5px 5px 3px #3b5998; }
+  text-shadow: 2px 0 0 white, -2px 0 0 white, 0 2px 0 white, 0 -2px 0 white, 1px 1px white, -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white; }
 
 #copyright {
   text-align: left;
@@ -373,7 +373,7 @@ body {
   font-size: 2em;
   color: #3b5998;
   font-weight: bold;
-  text-shadow: 1px 1px 3px green, 2px 2px 3px gray, 3px 3px 3px pink; }
+  text-shadow: 2px 0 0 white, -2px 0 0 white, 0 2px 0 white, 0 -2px 0 white, 1px 1px white, -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white; }
 
 .results {
   margin-top: 50px; }
@@ -381,8 +381,7 @@ body {
     background-color: #3b5998;
     color: white;
     padding: 1px 2px 1px 2px;
-    border-radius: 3px;
-    font-weight: bold; }
+    border-radius: 3px; }
 
 #home-logo-row {
   display: inline-block; }
