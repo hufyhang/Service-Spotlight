@@ -35,7 +35,7 @@
                 </div>
             <% }); %>
             <hr/>
-            <div><em>End of search result.</em></div>
+            <div id="result-end-tag"><em>End of search result.</em></div>
             </div>
         </script>
 
@@ -55,13 +55,16 @@
                 <input type="text" id="home-input" class="form-control" value="" name="">
                 </input>
             </div>
+            <div class="row" id="home-hint">
+                <em>Separate keywords by commas. For example: service, cloud computing, database</em>
+            </div>
             <div class="row">
                 <div class="btn btn-primary" id="search-btn"><i class="fa fa-search embed-icon"></i>Search</div>
             </div>
+            <div id="copyright">&copy; 2012-2014 Feifei Hang, Univeristy of Manchester.</div>
         </div>
 
         <div class="center" id="result-container">
-            GONNA BE A BANNER OR HEADER OR SOMETHING HERE :-)
         </div>
 
         <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>

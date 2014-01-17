@@ -23,16 +23,32 @@ body {
   font-weight: normal;
   text-shadow: 1px 1px 0px white, 2px 2px 0px red, 3px 3px 0px yellow, 6px 5px 0px blue; }
 
+#copyright {
+  background-color: #6BB8FC;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  padding-top: 7px;
+  padding-bottom: 6px;
+  bottom: 0;
+  color: white; }
+
+#result-end-tag {
+  color: gray;
+  margin-bottom: 10px; }
+
 .center {
   position: absolute;
   left: 10%;
   right: 10%; }
 
 #home-container {
-  margin: 5% auto;
+  margin: 10% auto;
   text-align: center; }
   #home-container #search-btn {
-    font-size: 1em; }
+    font-size: 1em;
+    margin-bottom: 35px; }
 
 #result-container {
   display: none; }
@@ -45,6 +61,11 @@ body {
 
 #home-input {
   margin: 10px auto; }
+
+#home-hint {
+  margin-top: -5px;
+  margin-bottom: 5px;
+  color: gray; }
 
 .entry-container {
   margin-bottom: 10px;
