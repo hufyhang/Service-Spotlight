@@ -30,7 +30,7 @@ body {
     font-size: 4em;
     font-family: "Francois One", sans-serif;
     font-weight: normal;
-    text-shadow: 1px 1px 0px white, 2px 2px 0px red, 3px 3px 0px yellow, 6px 5px 0px blue;
+    text-shadow: 1px 1px 3px white, 2px 2px 3px red, 3px 3px 3px yellow, 6px 5px 3px blue;
 }
 
 #copyright {
@@ -74,6 +74,16 @@ body {
 
 #result-container {
     display: none;
+}
+
+#loading-spinner {
+    position: absolute;
+    left: 30%;
+    margin-top: 60px;
+    font-size: 2em;
+    color: #6BB8FC;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px green, 2px 2px 3px gray, 3px 3px 3px pink;
 }
 
 .results {

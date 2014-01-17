@@ -38,9 +38,11 @@ require(['resultView'], function (resultView) {
             $(document).attr('title', 'Service Spotlight');
         },
         'search': function () {
+            var html = '<div id="loading-spinner"><i class="fa fa-spinner fa-spin fa-5x"></i> Loading magic...</div>';
             view.render();
             $('#home-container').css('display', 'none');
             $('#result-container').css('display', 'initial');
+            $('#result-container').append(html);
             // $('body').css('background-image', '');
         },
         'awesome': function () {

@@ -28,7 +28,8 @@ if (mysqli_connect_errno($con))
         // add highlight tags on keywords
         // foreach ($keys as $k) {
         //     $replace = '<span class"highlight-tag">' .$k. '</span>';
-        //     $desc = str_replace('/(' . $k . ')/g', $replace, $desc);
+        //     $pattern = '/\\b' . $k . '\\b/i';
+        //     $desc = preg_replace($pattern, $replace, $desc);
         // }
 
         $res = $res . '{"serviceName":"' . $row['service_name'] .
