@@ -10,30 +10,42 @@ require(['resultView'], function (resultView) {
     console.log('$$ |  $$ |   $$ |   $$ | \\_/ $$ |$$$$$$$$\\\\$$$$$$  |');
     console.log('\\__|  \\__|   \\__|   \\__|     \\__|\\________|\\______/');
 
+    var quotes = [
+        'Keep calm & carry on, dude!',
+        'Hustle up, man!',
+        'You rock, bro!',
+        'You are too cool, man!',
+        '“love the life you live. live the life you love.” ― Bob Marley',
+        '"Mama always said life was like a box of chocolates. You never know what you\'re gonna get." - Forrest Gump'
+    ];
+
+    /**
+     * Returns a random integer between min and max
+     * Using Math.round() will give you a non-uniform distribution!
+     */
+    var getRandomInt = function (min, max) {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
 
     var view = Ribs.make(resultView.View);
 
     var router = Ribs.Router.route({
         'home': function () {
+            $('#logo-text').html('Service&nbsp;<i class="fa fa-cloud fa-2x"></i>&nbsp;Spotlight');
             $('#home-container').css('display', 'initial');
             $('#result-container').css('display', 'none');
             $('#home-input').val('').css('background-color', '').focus();
             $(document).attr('title', 'Service Spotlight');
-            $('body').css('background-image', '');
-            $('#logo-text').css('visibility', 'visible');
-            $('#copyright').css('visibility', 'visible');
         },
         'search': function () {
             view.render();
             $('#home-container').css('display', 'none');
             $('#result-container').css('display', 'initial');
-            $('body').css('background-image', '');
+            // $('body').css('background-image', '');
         },
         'awesome': function () {
-            $('body').css('background-image', 'url("img/keep_calm.jpg")').css('background-size', 'cover');
-            $('#logo-text').css('visibility', 'hidden');
-            $('#home-input').css('background-color', 'rgba(255, 255, 255, 0.5)');
-            $('#copyright').css('visibility', 'hidden');
+            var quote = quotes[getRandomInt(0, quotes.length - 1)];
+            $('#logo-text').html(quote);
         }
     });
 
