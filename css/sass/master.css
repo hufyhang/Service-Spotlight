@@ -91,13 +91,18 @@ body {
   padding: 10px 10px; }
   .entry-container .service-name {
     font-size: 1.5em;
-    margin-bottom: 0px; }
+    margin-bottom: 0px;
+    text-decoration: underline; }
   .entry-container .provider {
     font-size: 1.3em; }
+    .entry-container .provider a {
+      color: #006621 !important;
+      font-size: 15px; }
   .entry-container .description {
     overflow: hidden;
     text-overflow: ellipsis;
-    max-height: 60px !important; }
+    max-height: 60px !important;
+    margin-bottom: 0px; }
 
 #result-banner {
   background-color: white;

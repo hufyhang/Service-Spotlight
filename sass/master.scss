@@ -119,16 +119,23 @@ body {
     .service-name {
         font-size: 1.5em;
         margin-bottom: 0px;
+        text-decoration: underline;
     }
 
     .provider {
         font-size: 1.3em;
+
+        a {
+            color: #006621 !important;
+            font-size: 15px;
+        }
     }
 
     .description {
         overflow: hidden;
         text-overflow: ellipsis;
         max-height: $result-description-max-height;
+        margin-bottom: 0px;
     }
 }
 
