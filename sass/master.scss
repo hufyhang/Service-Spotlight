@@ -4,6 +4,7 @@ $logo-home-height: 120px;
 $result-background-color: #F8F8F8;
 $result-description-max-height: 60px !important;
 $home-container-top-margin: 15%;
+$main-theme-blue: #3b5998;
 
 * {box-sizing: border-box}
 
@@ -23,20 +24,20 @@ body {
 }
 
 #logo-text {
-    color: #0074D9;
+    color: $main-theme-blue;
     font-weight: bold;
     letter-spacing: .1em;
     text-transform: uppercase;
     font-size: 4em;
     font-family: "Francois One", sans-serif;
     font-weight: normal;
-    text-shadow: 1px 1px 3px white, 2px 2px 3px red, 3px 3px 3px yellow, 6px 5px 3px blue;
+    text-shadow: 1px 1px 3px white, 2px 2px 3px red, 3px 3px 3px yellow, 4px 4px 3px blue, 5px 5px 3px $main-theme-blue;
 }
 
 #copyright {
     text-align: left;
     padding-left: 20px;
-    background-color: #6BB8FC;
+    background-color: $main-theme-blue;
     position: fixed;
     z-index: 1;
     left: 0;
@@ -83,7 +84,7 @@ body {
     left: 30%;
     margin-top: 60px;
     font-size: 2em;
-    color: #6BB8FC;
+    color: $main-theme-blue;
     font-weight: bold;
     text-shadow: 1px 1px 3px green, 2px 2px 3px gray, 3px 3px 3px pink;
 }
@@ -92,7 +93,8 @@ body {
     margin-top: 50px;
 
     span.highlight-tag {
-        background-color: #7FDBFF;
+        background-color: $main-theme-blue;
+        color: white;
         padding: 1px 2px 1px 2px;
         border-radius: 3px;
         font-weight: bold;
@@ -122,6 +124,10 @@ body {
         font-size: 1.5em;
         margin-bottom: 0px;
         text-decoration: underline;
+
+        a {
+            color: $main-theme-blue !important;
+        }
     }
 
     .provider {

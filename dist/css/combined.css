@@ -319,19 +319,19 @@ body {
   height: 120px; }
 
 #logo-text {
-  color: #0074D9;
+  color: #3b5998;
   font-weight: bold;
   letter-spacing: .1em;
   text-transform: uppercase;
   font-size: 4em;
   font-family: "Francois One", sans-serif;
   font-weight: normal;
-  text-shadow: 1px 1px 3px white, 2px 2px 3px red, 3px 3px 3px yellow, 6px 5px 3px blue; }
+  text-shadow: 1px 1px 3px white, 2px 2px 3px red, 3px 3px 3px yellow, 4px 4px 3px blue, 5px 5px 3px #3b5998; }
 
 #copyright {
   text-align: left;
   padding-left: 20px;
-  background-color: #6BB8FC;
+  background-color: #3b5998;
   position: fixed;
   z-index: 1;
   left: 0;
@@ -370,14 +370,15 @@ body {
   left: 30%;
   margin-top: 60px;
   font-size: 2em;
-  color: #6BB8FC;
+  color: #3b5998;
   font-weight: bold;
   text-shadow: 1px 1px 3px green, 2px 2px 3px gray, 3px 3px 3px pink; }
 
 .results {
   margin-top: 50px; }
   .results span.highlight-tag {
-    background-color: #7FDBFF;
+    background-color: #3b5998;
+    color: white;
     padding: 1px 2px 1px 2px;
     border-radius: 3px;
     font-weight: bold; }
@@ -400,6 +401,8 @@ body {
     font-size: 1.5em;
     margin-bottom: 0px;
     text-decoration: underline; }
+    .entry-container .service-name a {
+      color: #3b5998 !important; }
   .entry-container .provider {
     font-size: 1.3em; }
     .entry-container .provider a {
