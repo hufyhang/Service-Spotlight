@@ -403,6 +403,10 @@ body {
     .entry-container .provider a {
       color: #006621 !important;
       font-size: 15px; }
+  .entry-container .descriptionUrl {
+    font-size: 1.3em;
+    color: #006621 !important;
+    font-size: 15px; }
   .entry-container .description {
     overflow: hidden;
     text-overflow: ellipsis;
