@@ -60,6 +60,10 @@ body {
 
 .results {
   margin-top: 50px; }
+  .results span.highlight-tag {
+    background-color: #7FDBFF;
+    padding: 2px 2px;
+    border-radius: 3px; }
 
 #home-logo-row {
   display: inline-block; }

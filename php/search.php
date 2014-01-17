@@ -24,10 +24,17 @@ if (mysqli_connect_errno($con))
     $res = $res . '200", "data": [';
     while($row = mysqli_fetch_array($result))
     {
+        $desc = $row['description'];
+        // add highlight tags on keywords
+        // foreach ($keys as $k) {
+        //     $replace = '<span class"highlight-tag">' .$k. '</span>';
+        //     $desc = str_replace('/(' . $k . ')/g', $replace, $desc);
+        // }
+
         $res = $res . '{"serviceName":"' . $row['service_name'] .
             '", "provider":"' . $row['provider'] . '", "providerUrl":"' .
             $row['provider_url'] . '", "descriptionUrl":"' . $row['description_url'] .
-            '", "description":"' . $row['description'] . '"},';
+            '", "description":"' . $desc . '"},';
     }
     $res = rtrim($res, ',');
     $res = $res . ']';

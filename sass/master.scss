@@ -78,6 +78,12 @@ body {
 
 .results {
     margin-top: 50px;
+
+    span.highlight-tag {
+        background-color: #7FDBFF;
+        padding: 2px 2px;
+        border-radius: 3px;
+    }
 }
 
 #home-logo-row {
