@@ -16,7 +16,25 @@ require(['resultView'], function (resultView) {
         'You rock, bro!',
         'You are too cool, man!',
         '“love the life you live. live the life you love.” ― Bob Marley',
-        '"Mama always said life was like a box of chocolates. You never know what you\'re gonna get." - Forrest Gump'
+        '"Mama always said life was like a box of chocolates. You never know what you\'re gonna get." - Forrest Gump',
+        '“Nothing is impossible, the word itself says ‘I’m possible’!” - Audrey Hepburn',
+        '“It\'s the imperfections that make things beautiful” ― Jenny Han, The Summer I Turned Pretty',
+        '“A wise man can learn more from a foolish question than a fool can learn from a wise answer.” ― Bruce Lee',
+        '“Yeah, well. I don’t try to be awesome. It just comes natural.” ― Rick Riordan, The Lost Hero',
+        '“Only God is awesome.” ― Shane Claiborne',
+        '“You are the sun, and I\'m the moon. In your shadow I can shine.” ― Tokio Hotel',
+        '“unless someone like you comes around, things will never change.” ― Dr. Seuss',
+        '“It\'s not how you pick your nose, it\'s where you put that booger that counts.” ― Tre Cool',
+        '“There is no short-cut to awesome.” ― Zoe Winters',
+        '“Your time has come to pick the road you walk in this tale.” ― Claudio Sanchez',
+        '“Do I want to change the world? To a certain extent yeah. It needs to be changed... it needs a kick up the ass.” ― Green Day',
+        '“Old words are reborn with new faces.” ― Criss Jami',
+        '“Plus my boots were made of awesome.” ― Gwen Hayes, Let Me Call You Sweetheart',
+        '“Never give up. Dare to Dream. Dare to believe.” ― Stacey T. Hunt',
+        '“Never underestimate the power of you.” ― unknown wise person',
+        '“Make it bigger, make it badder, make it awesome!” ― Duff Goldman',
+        '“Never doubt the power of WWW.” ― Feifei Hang',
+        '“Big things have small beginnings.” ― Prometheus'
     ];
 
     /**
