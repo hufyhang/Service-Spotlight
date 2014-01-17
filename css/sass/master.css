@@ -41,7 +41,8 @@ body {
 #home-btn-row {
   text-align: center;
   display: inline-block;
-  width: 360px; }
+  width: 360px;
+  margin-bottom: 35px; }
 
 .center {
   position: absolute;
@@ -52,8 +53,7 @@ body {
   margin: 10% auto;
   text-align: center; }
   #home-container #search-btn {
-    font-size: 1em;
-    margin-bottom: 35px; }
+    font-size: 1em; }
 
 #result-container {
   display: none; }
