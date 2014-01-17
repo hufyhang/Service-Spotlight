@@ -6,6 +6,12 @@ header("Access-Control-Allow-Origin: *");
 $con = mysqli_connect("31.22.4.32","feifeiha_public","p0OnMM722iqZ","feifeiha_ws_spotlight");
 $res = '{"status":"';
 
+function str_replace_word($needle,$replacement,$haystack){
+    $pattern = "/\b\w*$needle\w*\b/i";
+    $haystack = preg_replace($pattern, $replacement, $haystack);
+    return $haystack;
+}
+
 // Check connection
 if (mysqli_connect_errno($con))
 {
@@ -26,11 +32,10 @@ if (mysqli_connect_errno($con))
     {
         $desc = $row['description'];
         // add highlight tags on keywords
-        // foreach ($keys as $k) {
-        //     $replace = '<span class"highlight-tag">' .$k. '</span>';
-        //     $pattern = '/\\b' . $k . '\\b/i';
-        //     $desc = preg_replace($pattern, $replace, $desc);
-        // }
+        foreach ($keys as $k) {
+            $replace = "<span class='highlight-tag'>$k</span>";
+            $desc = str_replace_word($k, $replace, $desc);
+        }
 
         $res = $res . '{"serviceName":"' . $row['service_name'] .
             '", "provider":"' . $row['provider'] . '", "providerUrl":"' .
