@@ -17,13 +17,23 @@ require(['resultView'], function (resultView) {
         'home': function () {
             $('#home-container').css('display', 'initial');
             $('#result-container').css('display', 'none');
-            $('#home-input').val('').focus();
+            $('#home-input').val('').css('background-color', '').focus();
             $(document).attr('title', 'Service Spotlight');
+            $('body').css('background-image', '');
+            $('#logo-text').css('visibility', 'visible');
+            $('#copyright').css('visibility', 'visible');
         },
         'search': function () {
             view.render();
             $('#home-container').css('display', 'none');
             $('#result-container').css('display', 'initial');
+            $('body').css('background-image', '');
+        },
+        'awesome': function () {
+            $('body').css('background-image', 'url("img/keep_calm.jpg")').css('background-size', 'cover');
+            $('#logo-text').css('visibility', 'hidden');
+            $('#home-input').css('background-color', 'rgba(255, 255, 255, 0.5)');
+            $('#copyright').css('visibility', 'hidden');
         }
     });
 
@@ -40,6 +50,10 @@ require(['resultView'], function (resultView) {
         if (e.keyCode === 13) {
             $('#search-btn').click();
         }
+    });
+
+    $('#awesome-btn').on('click', function () {
+        router.navigate('awesome');
     });
 
     router.navigate('home');

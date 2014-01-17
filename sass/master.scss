@@ -50,6 +50,12 @@ body {
     margin-bottom: 10px;
 }
 
+#home-btn-row {
+    text-align: center;
+    display: inline-block;
+    width: 360px;
+}
+
 .center {
     position: absolute;
     left: $vertical-margin;
