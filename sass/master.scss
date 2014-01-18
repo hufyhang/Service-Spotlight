@@ -114,11 +114,12 @@ body {
     margin-top: 50px;
 
     span.highlight-tag {
-        background-color: $main-theme-blue;
-        color: white;
-        padding: 1px 2px 1px 2px;
-        border-radius: 3px;
-        // font-weight: bold;
+        // background-color: $main-theme-blue;
+        // color: white;
+        color: red;
+        font-weight: bold;
+        // padding: 1px 2px 1px 2px;
+        // border-radius: 3px;
     }
 }
 
