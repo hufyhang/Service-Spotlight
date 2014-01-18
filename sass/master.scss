@@ -87,10 +87,15 @@ body {
     display: none;
 }
 
-#loading-spinner {
+.loading-container {
     position: absolute;
-    left: 30%;
+    left: 20%;
+    right: 20%;
     margin-top: 60px;
+    text-align: center;
+}
+
+#loading-spinner {
     font-size: 2em;
     color: $main-theme-blue;
     font-weight: bold;
@@ -99,16 +104,17 @@ body {
 }
 
 #hints {
-    position: absolute;
-    left: 30%;
-    right: 30%;
-    margin-top: 300px;
+    // position: absolute;
+    // left: 30%;
+    // right: 30%;
+    margin-top: 10px;
     text-align: justify;
     // font-size: 2em;
-    color: grey;
+    color: rgb(153, 153, 153);
+    font-size: 1.5em;
     // font-weight: bold;
     // text-shadow: 1px 1px 3px green, 2px 2px 3px gray, 3px 3px 3px pink;
-    text-shadow: $main-text-shadow;
+    // text-shadow: $main-text-shadow;
 }
 
 .results {

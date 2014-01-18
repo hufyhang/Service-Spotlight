@@ -56,8 +56,8 @@ require(['resultView'], function (resultView) {
             $(document).attr('title', 'Service Spotlight');
         },
         'search': function () {
-            var html = '<div id="loading-spinner"><i class="fa fa-spinner fa-spin fa-5x"></i> Loading magic...</div>';
-            // html += '<div id="hints">Why so slow?<br/>Well, congratulations! That means we have found tons of candidate services for you. Since we insist to present you all the services as a whole rather than separating them into pages, it may takes a bit while to load the data from our server.<br/>Why not take a break while we are preparing your search results for you?&nbsp;<i class="fa fa-smile-o"></i></div>';
+            var html = '<div class="loading-container"><div id="loading-spinner"><i class="fa fa-spinner fa-spin fa-5x"></i> Loading magic...</div>';
+            html += '<div id="hints">Why so slow?<br/>Well, congratulations! That means we have found tons of candidate services for you. Since we insist to present you all the services as a whole rather than separating them into pages, it may takes a bit while to load the data from our server.<br/>Why not take a break while we are preparing your search results for you?&nbsp;<i class="fa fa-smile-o"></i></div></div>';
             view.render();
             $('#home-container').css('display', 'none');
             $('#result-container').css('display', 'initial');
