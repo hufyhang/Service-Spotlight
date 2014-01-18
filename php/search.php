@@ -7,7 +7,8 @@ $con = mysqli_connect("31.22.4.32","feifeiha_public","p0OnMM722iqZ","feifeiha_ws
 $res = '{"status":"';
 
 function str_replace_word($needle,$replacement,$haystack){
-    $pattern = "/\b\w*$needle\w*\b/i";
+    // $pattern = "/\b\w*$needle\w*\b/i";
+    $pattern = "/($needle)/i";
     $haystack = preg_replace($pattern, $replacement, $haystack);
     return $haystack;
 }
